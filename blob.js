@@ -9,12 +9,13 @@ c.globalCompositeOperation = 'destination-over'
 
 phase = 1;
 z = 0;
-zoff = 0.05;
+zoff = 0.03;
 animate();
 
 function circle(z) {
 
     c.strokeStyle = "white";
+    c.fillStyle = "white";
 
     c.beginPath();
     w = canvas.width / 2;
@@ -30,10 +31,10 @@ function circle(z) {
         y = r * Math.sin(a) + h;
 
         c.lineTo(x, y);
-        c.moveTo(x, y);
     }
     c.closePath();
     c.stroke();
+    c.fill();
 }
 
 function animate() {
