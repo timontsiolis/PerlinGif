@@ -21,7 +21,7 @@ function circle(z) {
     w = canvas.width / 2;
     h = canvas.height / 2;
 
-    for (let a = 0; a <= Math.PI * 2; a += 0.01) {
+    for (let a = 0; a <= Math.PI * 2; a += 0.001) {
 
         xoff = Math.cos(a + phase) + 1;
         yoff = Math.sin(a + phase) + 1;
