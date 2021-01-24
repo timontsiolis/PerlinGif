@@ -7,7 +7,7 @@ var c = canvas.getContext("2d");
 
 c.globalCompositeOperation = 'destination-over'
 
-phase = 1;
+phase = 10;
 z = 0;
 zoff = 0.03;
 animate();
@@ -21,7 +21,7 @@ function circle(z) {
     w = canvas.width / 2;
     h = canvas.height / 2;
 
-    for (let a = 0; a <= Math.PI * 2; a += 0.001) {
+    for (let a = 0; a <= Math.PI * 2; a += 0.01) {
 
         xoff = Math.cos(a + phase) + 1;
         yoff = Math.sin(a + phase) + 1;
